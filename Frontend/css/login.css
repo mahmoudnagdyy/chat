@@ -1,0 +1,20 @@
+body{
+    background-color: #7bafed;
+    font-family: "Cairo", sans-serif;
+}
+
+.signup_cont{
+    background-color: #041426;
+    margin-top: 100px;
+    position: relative;
+}
+
+.already_btn{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+.already_btn a{
+    text-decoration: none;
+}

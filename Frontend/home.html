@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>Chat - Home</title>
+</head>
+<body>
+    <div class="container home_cont d-flex flex-row text-white rounded-3 p-4">
+
+        <div class="users_cont d-flex flex-column" id="users_cont">
+            <div class="logedIn_user">
+                <h2 class="text-capitalize" id="username"></h2>
+                <p id="email"></h2>
+            </div>
+
+            <div class="d-flex flex-column" id="otherUsers_cont">
+            </div>
+        </div>
+
+        <div class="messages_cont d-flex flex-column" id="messages_cont">
+            <h2 id="msg_user"></h2>
+            <div id="conversation_msgs" class="userMsgs_cont messages d-none">
+
+
+            </div>
+
+
+            <form id="sendMsg_form" class="d-flex flex-row d-none">
+                <input type="text" class="form-control" id="msg" placeholder="Message">
+                <button type="button" class="btn btn-primary text-capitalize" id="send_btn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+
+    </div>
+    
+    <script src="http://localhost:5050/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./js/home.js"></script>
+</body>
+</html>
